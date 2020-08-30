@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+		<title>Azad Hind Secure Vault</title>
+		
+		   <!-- CSS -->
+		   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+		   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		   <link rel="stylesheet" href="assets/css/style.css">
+   
+		   <!-- Favicon and touch icons -->
+		   <link rel="shortcut icon" href="assets/ico/favicon.png">
+		   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+		   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+		   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+   
+	   <!-- CSS Ends -->
+
+
+    </head>
+
+    <body class="h-100">
+    
+    	
+    	<div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 col-md-8 col-lg-6">
+					<!-- Form -->
+                    <form class="form-example" name="myForm" action='information' method='POST' onsubmit="return ValidateData()"> 
+                		<h1 style="text-align: center;" center>Azad Hind Secure Vault {Prototype}</h1>
+                		<p style="text-align: center;" class="description">Enter You're Credentials to Store in Blockchain</p>
+                		<!-- Input fields -->
+                        <div class="form-group">
+                            <label for="website_url">Domain:</label>
+                            <input type='text' class="form-control website_url" for='website_url' placeholder='URL of the Website' name='website_url' id='website_url' required> 
+                        </div>
+                		<div class="form-group">
+                			<label for="email">Email Id:</label>
+                            <input type='text' class="form-control email" for='email' placeholder='Email' name='email' id='email' autocomplete="off" pattern="^[a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,15})$" required> 
+                		</div>
+						<div class="form-group">
+							<label for="password">Password:</label>
+                            <input type='password' class="form-control password" for='password' placeholder='Password' name='password' id='password' autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> 
+						</div>
+						<button type="submit" class="btn btn-primary btn-customized">Submit</button>
+						<!-- End input fields -->
+						<br/>
+						<br/>
+                		<p style="text-align: center;" class="copyright">&copy; Containerized Password Security System by <a href="https://github.com/Bharath-raj">Bharath Raj T</a>.</p>
+                	</form>
+					<!-- Form end -->
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+
+    <!-- Empty Validation -->
+<script type="text/javascript">
+
+    function ValidateData(){
+     var website_url = document.forms["myForm"]["website_url"].value;
+        var email = document.forms["myForm"]["email"].value;
+     var password = document.forms["myForm"]["password"].value;
+     if(website_url == "" || email == "" || password == ""){
+           alert("All the Fields are Mandatory");
+           return false;
+     }
+    }
+
+</script>
+    <!-- Empty Validation Ends -->
+</html>
+

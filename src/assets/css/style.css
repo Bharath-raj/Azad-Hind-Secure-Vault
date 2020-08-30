@@ -1,0 +1,58 @@
+
+body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; line-height: 30px; text-align: center; }
+
+a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
+a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
+
+h1 { font-size: 26px; font-weight: 300; color: #555; line-height: 46px; font-style: italic; }
+
+::-moz-selection { background: #8542a0; color: #fff; text-shadow: none; }
+::selection { background: #8542a0; color: #fff; text-shadow: none; }
+
+
+.form-example { padding: 20px 0; }
+
+.form-example p.description { margin-bottom: 20px; }
+.form-example p.copyright { margin-top: 40px; }
+
+.form-example .form-group { text-align: left; }
+
+.form-example input[type="text"],
+.form-example input[type="password"] {
+    background: none; border: 1px solid #ddd; 
+    font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; 
+    box-shadow: none;
+}
+.form-example input[type="text"]:focus,
+.form-example input[type="password"]:focus { outline: 0; background: none; border: 1px solid #a365bc; box-shadow: none; }
+
+.form-example input[type="text"]::-moz-placeholder,
+.form-example input[type="password"]::-moz-placeholder { color: #bbb; font-style: italic; }
+
+.form-example input[type="text"]:-ms-input-placeholder,
+.form-example input[type="password"]:-ms-input-placeholder { color: #bbb; font-style: italic; }
+
+.form-example input[type="text"]::-webkit-input-placeholder,
+.form-example input[type="password"]::-webkit-input-placeholder { color: #bbb; font-style: italic; }
+
+.form-example button.btn-customized {
+	margin-top: 1rem;
+	padding: .75rem 1.5rem; 
+	background: #a365bc;
+	border: 0; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400; color: #fff; 
+    box-shadow: none;
+}
+
+.form-example button.btn-customized:hover, 
+.form-example button.btn-customized:active, 
+.form-example button.btn-customized:focus, 
+.form-example button.btn-customized:active:focus, 
+.form-example button.btn-customized.active:focus,
+.form-example button.btn.btn-primary:not(:disabled):not(.disabled):active,
+.form-example button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+	outline: 0; background: #8542a0; border: 0; color: #fff; box-shadow: none;
+}
+
