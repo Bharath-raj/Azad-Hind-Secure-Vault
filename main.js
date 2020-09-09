@@ -76,7 +76,7 @@ pwd1.signTransaction(myKey);
 pwdMgr.addBlock(pwd1);
 
 //Fetch's the Data Entered by User
-//console.log(JSON.stringify(pwdMgr,null,4));
+console.log(JSON.stringify(pwdMgr,null,4));
 
 
 //Show's whether the Block is Valid or Not

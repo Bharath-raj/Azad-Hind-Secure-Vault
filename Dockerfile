@@ -1,9 +1,13 @@
-FROM alpine:latest
-RUN apk add --no-cache nodejs npm
-WORKDIR /app
+FROM node:12
+
+WORKDIR /usr/src/app
+
 COPY package*.json ./
-COPY . /app
+
 RUN npm install
+
+COPY . .
+
 EXPOSE 3000
-ENTRYPOINT ["node"]
-CMD ["main.js"]
+
+CMD [ "node", "main.js" ]
